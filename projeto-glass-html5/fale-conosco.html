@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tudo sobre Google Glass</title>
+        <link rel="stylesheet"  href="c:\Users\ORTO GAMER\Documents\projeto-glass-html5\_css\estilos.css">
+        <link rel="stylesheet"  href="c:\Users\ORTO GAMER\Documents\projeto-glass-html5\_css\form.css">
+        <script src="_javascript/funcoes.js"></script>
+        <script>
+            function calc_total(){
+                var qtd = parseInt(document.getElementById('cqtd').value);
+                tot = qtd*1500;
+                document.getElementById('cpc').value = tot;
+            }
+        </script>
+    </head>
+    <script language="javascript" src="c:\Users\ORTO GAMER\Documents\projeto-glass-html5\_javascript\funcoes.js"></script>
+    <body>
+<div id="interface">
+
+            <header id="cabecalho">
+                 <hgroup>
+                    <h1>Google Glass</h1> 
+                    <h2>A  revolusão do google está chegando</h2>
+                    <img id="flor" src="_imagens/glass.png" height="130" width="256"/>
+                </hgroup>
+                <img id="icone" src="c:\Users\ORTO GAMER\Documents\projeto-glass-html5\_imagens\OCULOS GG.PNG">            
+    <nav id="menu">
+    <h1>Menu principal</h1>
+    <ul type="A" >
+        <li onmouseover="mudafoto('file:///c:/Users/ORTO%20GAMER/Documents/projeto-glass-html5/_imagens/home.png')" onmouseout="mudafoto('file:///c:/Users/ORTO%20GAMER/Documents/projeto-glass-html5/_imagens/contato.png')"><a href="index.html" target="_blank">Home</a></li>
+        <li onmouseover="mudafoto('file:///c:/Users/ORTO%20GAMER/Documents/projeto-glass-html5/_imagens/especificacoes.png')"  onmouseout="mudafoto('file://c:/Users/ORTO%20GAMER/Documents/projeto-glass-html5/_imagens/contato.png')"><a href="specs.html" target="_blank">Especificações</a></li>
+        <li onmouseover="mudafoto('file:///c:/Users/ORTO%20GAMER/Documents/projeto-glass-html5/_imagens/fotos.png')" onmouseout="mudafoto('file:///c:/Users/ORTO%20GAMER/Documents/projeto-glass-html5/_imagens/contato.png')"><a href="fotos.html" target="_blank">Fotos</a></li>
+        <li onmouseover="mudafoto('file:///c:/Users/ORTO%20GAMER/Documents/projeto-glass-html5/_imagens/multimidia.png')"" onmouseout="mudafoto('file:///c:/Users/ORTO%20GAMER/Documents/projeto-glass-html5/_imagens/contato.png')"><a href="multimidia.html" target="_blank">Multimidia</a></li>
+        <li onmouseover="mudafoto('file:///c:/Users/ORTO%20GAMER/Documents/projeto-glass-html5/_imagens/contato.png')" onmouseout="mudafoto('file:///c:/Users/ORTO%20GAMER/Documents/projeto-glass-html5/_imagens/contato.png')"><a href="fale-conosco.html" target="_blank">Fale conosco</a></li>
+    </ul>
+    </nav>
+            </header>
+    <section id="corp">
+        <article id="noticiaprincipal">
+        <header id="cabecalhoartigo">
+    <hgroup>
+    <H3>Fale conosco > Contexto</H3>
+    <H1>Formulário de contato</H1>
+    <h2>por ORTO GAMER</h2>
+    <H3 class="dirt">Atualizado em 23/Abril/2013</H3>
+    </hgroup>
+    </header>
+             <form method="post" id="fcontato" action="mailto:ecleniog@gmail.com" oninput="calc_total();"> 
+        <fieldset id="usuario">
+        <legend>
+        indentificação do usuário</legend>
+       <p> <label for="cNome">Nome:</label><input type="text" name="tName" id="cNome" size="30.5" maxlength="15" placeholder="Nome Completo"> </p>
+    <p><label for="csenha"></label>Senha:<input type="password" id="csenha" size="15" maxlength="15" minlength="8" placeholder="de 8 à 15 digitos"></p>
+<p><label for="cemail"> E-mail:</label><input type="email" size="30" id="cemail" placeholder="seu@email.com" ></p>
+<fieldset id="sexo">
+    <legend>Sexo:</legend> 
+             <input type="radio" name="tsexo" id="cmasc"><label for="cmasc">Masculino</label>
+             <input type="radio" name="tsexo" id="cfem"><label for="cfem">Feminino</label>
+            </fieldset>
+        <label for="cdn">Data de Nascimento:<input type="date" id="cdn" placeholder="dd/mm/aa">
+        </fieldset>
+      <fieldset id="casa"> 
+    <legend>
+        Endereço do usuário</legend>
+<p> <label for="trua">Logradouro:</label><input type="text" name="trua" id="crua" size="13" maxlength="80" placeholder="Rua, Av, Trav,..."> </p>
+<p><label for="cfone">Número:</label> <input type="number" id="cfone" placeholder="+244" size="9" maxlength="9"></p>
+<p><label for="csitio"> Estado:</label>
+    <select name="tsitio" id="csitio">
+<option>LUANDA</option>
+<option>CABINDA</option>
+<option>CUANZA-SUL</option>
+<option>CUANZA-NORTE</option>
+<option>MALANGE</option>
+<option>HUILA</option>
+<option>ZAIRE</option>
+<option>UIGE</option>
+<option>CUNENE</option>
+<option>CUANDO-KUBANGO</option>
+<option>HUAMBO</option>
+<option>MOXICO</option>
+<option>LUNDA-SUL</option>
+<option>LUNDA-NORTE</option>
+<option>BENGUELA</option>
+<option>BENGO</option>
+    </select>
+    </p>
+<p> <label for="ccid">Cidade:</label><input type="text" name="tcid" id="ccid" placeholder="Cidade" size="40" maxlength="30" list="cidades">
+    <datalist id="cidades">
+        <option value="Cidades de Luanda"></option>
+        <option value="cidades de Benguela "></option>
+        <option value="cidades de Cuanza-Sul"></option>
+        <option value="cidades da HUILA"></option>
+        <option value="cidades do UIGE"></option>
+        <option value="cidades do CUANZA-NORTE"></option>
+        <option value="cidades de MALANGE"></option>
+        <option value="cidades do MOXICO"></option>
+        <option value="cidades do BENGO"></option>
+    </datalist> </p>
+    </fieldset>
+<fieldset id="sms">
+<legend>Mensagem do usuário</legend>
+<p><label for="ccc">Grau de urgencia:</label>MIN<input  id="ccc" type="range" min="0" max="10" step="2"/>MAX</p>
+<p><label for="csms">Mensagem:</label>
+<textarea name="tsms" id="csms" cols="45" rows="5" placeholder="Deixe aqui a tua Mensagem"></textarea>
+</p>
+</fieldset>
+    <fieldset id="pedido">
+    <legend>Quero um Google Glass</legend>
+<p><input type="checkbox" id="cped">
+    <label for="cped">Gostaria de adquirir um Google Glass quando estiver disponivel</label></p>
+<p> <label for="ccor"> Cor:</label> <input type="color" id="ccor"> </p>
+<p><label for="cqtd"> Quantidade:</label> <input id="cqtd" type="number" size="1" maxlength="5"></p>
+<p><label for="cpc">preço Total: Rs</label> <input id="cpc" type="number" ></p>
+        </fieldset>
+            <input type="submit" name="tEnviar" id="env" placeholder="ENVIAR" width="150" height="100">
+        </form>
+    </section>
+    <footer id="rodape">
+    <p>copyright&COPY; 2024 - by ORTO GAMER <br>
+    <a href="http://facebook.com/Eclénio" target="_blank">Facebook</a> | 
+    <a href="http://twitter.com/orto333" target="_blank">Twitter</a></p>
+    </footer>  
+</div>
+</body>
+</html>

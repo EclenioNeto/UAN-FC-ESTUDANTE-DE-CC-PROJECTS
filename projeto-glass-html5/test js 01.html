@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Teste javascript</title>
+    <meta charset="UTF-8"/>
+        <script>
+            var quebrada = false;
+            function mudaLampada (tipo){
+                if (!quebrada){
+                document.getElementById("luz").src= "file:///D:/Users/ORTO%20GAMER/Documents/projeto-glass-html5/_imagens/" + tipo + ".jpg" ;
+                if (tipo == 'luz3'){
+                    quebrada = true;
+                }
+            }
+
+            }
+         
+        </script>
+    <script>
+        document.write("olá, hoje é dia " + Date());
+        VideoPlaybackQuality
+    </script>
+    </head>
+<body>
+    <h1>Acenda a Lampada</h1>
+    <img src="file:///D:/Users/ORTO%20GAMER/Documents/projeto-glass-html5/_imagens/luz1.jpg" id="luz" onmousemove="mudaLampada('luz1')" onmouseout="mudaLampada('luz2')" onclick="mudaLampada('luz3')">
+</body>
+</html>
